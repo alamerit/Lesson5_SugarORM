@@ -296,11 +296,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onError(Throwable e) {
-                System.out.println(e.getMessage());
                 e.printStackTrace();
-                System.out.println(e.getMessage());
                 mInfoTextView.setText(getString(R.string.onFailure ) + e.getMessage());
-                System.out.println(e.getMessage());
                 progressBar.setVisibility(View.GONE);
             }
         });
